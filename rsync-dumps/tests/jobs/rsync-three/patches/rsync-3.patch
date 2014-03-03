@@ -1,0 +1,24 @@
+--- rsync-dumps.py	2014-02-05 09:59:48.659308680 +0200
++++ rsync-dumps.py.new3	2014-02-05 13:53:49.463388285 +0200
+@@ -124,8 +124,8 @@
+             'source': '/data/xmldatadumps/public/', # absolute path
+             'dest': 'data/xmldatadumps/public/', # will be prefixed by 'servername::' in rsync
+             'hosts': {
+-                'dataset2': { 'primary': True }, # everything but a specific list of dirs will be pushed
+-                'dataset1001': { 'dirs': [ ] } # only the specified list of dirs is here
++#                'dataset2': { 'primary': True }, # everything but a specific list of dirs will be pushed
++#                'dataset1001': { 'dirs': [ ] } # only the specified list of dirs is here
+             }
+         },
+         'other': { # job name
+@@ -133,8 +133,8 @@
+             'source': '/data/xmldatadumps/public/other/',
+             'dest': 'data/xmldatadumps/public/other/',
+             'hosts': {
+-                'dataset2': { 'dirs': [ ] },
+-                'dataset1001': { 'primary': True }
++#                'dataset2': { 'dirs': [ ] },
++#                'dataset1001': { 'primary': True }
+             }
+         }
+     }
